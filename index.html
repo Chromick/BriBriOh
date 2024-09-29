@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bri Bri Oh</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!---------------Header-------------------->
+    <header>
+        <h1>Deck Builder Bri Bri Oh</h1>
+    </header>
+
+    <!---------------Main-------------------->
+    <main>
+        <!-- Filtro -->
+        <div>
+            <label for="card-type">Filtrar por Tipo:</label>
+            <select id="card-type">
+                <option value="">Todos</option>
+
+            </select>
+        </div>
+
+        <!--Pop Up Carta-->
+        <dialog>
+            <div id="container">
+                <div id="img"></div>
+                <div id="info-card"></div>
+            </div>
+
+            <button id="sair">Sair</button>
+            <button id="adicionar">Adicionar ao Deck</button>
+            <button id="remover">Remover do Deck</button>
+        </dialog>
+
+
+        <!-- Deck -->
+        <div id="deck-list">
+            <img src="/img/car-box.png" alt="Card Box" id="card-box">
+
+            <div id="deck-cards"></div>
+        </div>
+
+        <div id="all-cards"></div>
+    </main>
+
+    <!---------------Footer-------------------->
+    <footer>
+        <p>&copy; 2024 Bri Bri Oh. Todos os direitos reservados.</p>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos e Condições</a>
+    </footer>
+
+</body>
+<script src="scripts.js"></script>
+
+</html>

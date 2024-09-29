@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/img/images.png'); /* Caminho para a imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-attachment: fixed; /* Faz a imagem ficar fixa, não rola junto com a página */
+    color: white;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+header {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+#deck-list {
+    display: flex;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#deck-list h2 {
+    margin-bottom: 15px;
+}
+
+#card-box{
+    height: 9rem;
+}
+
+/* Estilos para o deck */
+#deck-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Organiza as cartas no deck em uma grade */
+    gap: 15px;
+}
+
+#deck-cards .deck-card {
+    cursor: pointer; /* Torna a carta clicável */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#deck-cards .deck-card img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do container */
+    border-radius: 5px;
+}
+
+#all-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+dialog {
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%; /* Responsivo para telas menores */
+    position: fixed;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para que o centro do popup fique no meio da tela */
+    z-index: 1000; /* Garante que esteja acima de outros elementos */
+}
+
+/* Estilos para o diálogo (popup) */
+dialog {
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    background-color: #000000d5;
+    max-width: 90%; /* Responsivo para telas menores */
+    position: fixed;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para que o centro do popup fique no meio da tela */
+    z-index: 1000; /* Garante que esteja acima de outros elementos */
+    color: #fff;
+}
+
+/* Organiza o conteúdo da carta e as informações no modal */
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#container #img {
+    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+}
+
+/* Reduz a imagem da carta no popup em 50% */
+#container img {
+    width: 50%; /* Diminui o tamanho da imagem para 50% */
+    border-radius: 8px;
+}
+
+#info-card {
+    margin-bottom: 20px; /* Espaçamento entre a descrição e os botões */
+}
+
+/* Estilo dos botões */
+dialog button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+dialog button:hover {
+    background-color: #0056b3; /* Efeito ao passar o mouse */
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #282c34;
+    color: white;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
